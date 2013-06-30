@@ -1,0 +1,32 @@
+<div class="portfolio">
+
+	<div class="row">
+		{exp:channel:entries url_title="portfolio" channel="portfolio" catagory="7" limit="1"}
+			
+			<div class="portfolio_content">
+				<div class="large-6 columns">		
+					
+					<div class="row">
+						<div class="large-12 columns">
+							<div class="page_head">	
+				    			<h1>{portfolio_title}</h1>
+							</div>
+			    			<h4>{portfolio_summary}</h4>
+			    			<p>{portfolio_body}</p>
+			    			<h5><a href="#">Read More &#187;</a></h5>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			
+			<div class="portfolio_img">
+				<div class="large-6 columns">
+					<img src="images/uploads/{portfolio_image}">
+				</div>
+			</div>
+			
+		{/exp:channel:entries}
+	</div>
+	
+</div>

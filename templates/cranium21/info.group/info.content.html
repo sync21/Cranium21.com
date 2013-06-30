@@ -1,0 +1,52 @@
+<div class="containter page-head-info">
+	<div class="row">
+		<div class="large-1 columns">
+		&nbsp;
+		</div>
+		<div class="large-10 columns">
+			<div class="header-content-privacy">
+				{if segment_2 != ""}
+					{exp:channel:entries url_title={segment_2} channel="info" limit="1"}
+						<h1 class="blue">{title}</h1>
+					{/exp:channel:entries}
+				{if:else}
+					{exp:channel:entries url_title="info" channel="info" limit="1"}
+						<h1>{title}</h1>
+					{/exp:channel:entries}
+				{/if}
+			</div>
+			<hr>
+		</div>
+		<div class="large-1 columns">
+		&nbsp;
+		</div>
+	</div>	
+</div>
+
+<!--<div class="row">
+	<div class="large-12 columns">
+		<hr>
+	</div>
+</div>-->
+
+<div class="legal">
+	<div class="row">
+		<div class="large-1 columns">
+		&nbsp;
+		</div>
+		<div class="large-10 columns">
+			{if segment_2 != ""}
+				{exp:channel:entries url_title={segment_2} channel="info" limit="1"}
+		    			{info_body}
+				{/exp:channel:entries}
+			{if:else}
+				{exp:channel:entries url_title="info" channel="info" limit="1"}
+		    			{info_body}
+				{/exp:channel:entries}
+			{/if}
+		</div>
+		<div class="large-1 columns">
+		&nbsp;
+		</div>
+	</div>
+</div>

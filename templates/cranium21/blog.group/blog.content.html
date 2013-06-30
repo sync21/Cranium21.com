@@ -1,0 +1,32 @@
+<div class="row">
+	<div class="large-12 columns">
+		
+		{exp:channel:entries channel="Blog" <!--category_group="1&2&3&4&5&6"--> limit="10"}
+		
+			<div class="blog_posts-wrapper">
+				<div class="blog_posts">
+					
+					<div class="row">
+					
+						<div class="large-6 columns">
+							<div class="blog_posts-content">
+								<h2 class="blue">{title}</h2>
+								<h4 class="orange">{blog_summary}</h4>
+								<p>{blog_body}</p>
+								<h5 class="green"><a href="#">Read More &#187;</a></h5>
+							</div>
+						</div>
+						
+						<div class="large-6 columns">
+							<img src="../images/uploads/{blog_image}">
+						</div>
+						
+					</div>
+					
+				</div>
+			</div>
+			
+		{/exp:channel:entries}
+		
+	</div>
+</div>
